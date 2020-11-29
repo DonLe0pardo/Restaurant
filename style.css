@@ -1,0 +1,221 @@
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  src: url('./fonts/open-sans-v18-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/open-sans-v18-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       
+}
+/* open-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  src: url('./fonts/open-sans-v18-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/open-sans-v18-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       
+}
+
+/* Banny */
+@font-face {
+    font-family: 'Banny Round';
+    font-weight: normal;
+    src: local('Banny Round'), url('./fonts/Banny-Round.woff') format('woff');
+    font-style: normal;
+    }
+    
+
+@font-face {
+    font-family: 'Banny Light Round';
+    font-weight: normal;
+    src: local('Banny Light Round'), url('./fonts/Banny-LightRound.woff') format('woff');
+    font-style: normal;
+    }
+    
+
+@font-face {
+    font-family: 'Banny Bold Round';
+    font-weight: normal;
+    src: local('Banny Bold Round'), url('./fonts/Banny-BoldRound.woff') format('woff');
+    font-style: normal;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+
+/* контейнер +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.conteiner{
+	width: 1280px;
+	margin: 0 auto;
+}
+
+header{
+	background-image: url("header.jpg");
+	height: 800px;
+	width: 100%;
+	background-size: 100% 100%;
+}
+.header_up{
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+}
+
+nav{
+	width: 532px;
+	height: 100px;
+	display: flex;
+	justify-content: nowrap;
+
+}
+.navigation_item{
+	text-decoration: none;
+	height: 100px;
+	width: 133px;
+	text-align: center;
+	padding-top: 40px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 12px;
+	
+
+	
+}
+/* логотип-штурвал +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.logo{
+	background-image: url("logo.png");
+	width: 150px;
+    height: 150px;
+    margin-top: 25px; 
+    
+    
+}
+/* нижняя часть от header +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.restaurant_rectangle{
+	margin-top: 151px;
+	display: flex;
+	justify-content: space-between;
+    margin-bottom: 82px;
+}
+/* вертикальная надпись слева +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.vertical{
+	transform: rotate(-90deg);
+    text-align: center;
+    font-size: 12px;
+    margin-left: -117px;
+
+
+}
+/* прямоугольная часть посредине +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.main{
+	text-align: center;
+    margin-right: 70px;
+    
+
+}
+
+.restaurant{
+	letter-spacing: 0.5em;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+strong{
+	font-family: 'Banny Bold Round';
+	font-size: 96px;
+	width: 998px;
+    height: 139px;
+    text-transform: uppercase;
+
+}
+/* полоса +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.strip{
+	width: 60px;
+    height: 5.11px;
+	background: #E8C300;
+    border-radius: 50px;
+    margin: 0 auto;
+
+}
+/* 2 кнопки +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.buttons{
+	display: flex;
+	margin-top: 36px;
+	justify-content: center;
+
+}
+
+.button{
+	width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    align-items: center;
+    padding-top: 20px;
+    margin: 0 20px 0 20px;
+    
+}
+
+.button:hover{
+	cursor: pointer;
+	background-color: #E8C300;
+}
+/* символы инста, твиттер, фэйсбук +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.circle, .circle_1{
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      margin-bottom: 20px;
+      padding: 20px;
+}
+
+
+
+/* самый нижний символ в header +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.circle_1{
+    margin: 0 auto;
+    padding: 10px;
+     
+}
+
+
+.circle_inside{
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  padding: 10px;
+  
+  
+  
+  
+  
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
