@@ -64,7 +64,7 @@ p{
 .conteiner{
 	width: 1280px;
 	margin: 0 auto;
-	position: relative;
+	
 }
 
 header{
@@ -83,7 +83,7 @@ nav{
 	width: 532px;
 	height: 100px;
 	display: flex;
-	justify-content: nowrap;
+	
 
 }
 .navigation_item{
@@ -95,6 +95,7 @@ nav{
 	color: #ffffff;
 	text-transform: uppercase;
 	font-size: 12px;
+    
 	
 
 	
@@ -108,14 +109,14 @@ nav{
     
     
 }
-/* нижняя часть от header +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* нижняя часть в header +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .restaurant_rectangle{
 	margin-top: 151px;
 	display: flex;
 	justify-content: space-between;
     margin-bottom: 82px;
 }
-/* вертикальная надпись слева +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* вертикальная надпись слева в header+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .vertical{
 	transform: rotate(-90deg);
     text-align: center;
@@ -124,7 +125,7 @@ nav{
 
 
 }
-/* прямоугольная часть посредине +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* прямоугольная часть посредине в header+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .main{
 	text-align: center;
     margin-right: 70px;
@@ -137,6 +138,7 @@ h5, h6{
     text-transform: uppercase;
     font-size: 12px;
     text-align: center;
+    
 }
 
 strong{
@@ -147,7 +149,7 @@ strong{
     text-transform: uppercase;
 
 }
-/* полоса +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* полоса желтая+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .strip{
 	width: 60px;
     height: 5.11px;
@@ -205,7 +207,6 @@ strong{
      
 }
 
-
 .circle_inside{
   border-radius: 50%;
   background-color: #FFFFFF;
@@ -213,6 +214,7 @@ strong{
 } 
 
 /* Часть 1.+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 .section_1{
 	margin-top: 100px;
 
@@ -224,44 +226,59 @@ strong{
 }
 .box_about_1{
 	width: 600px;
-	margin-right: 40px;
+	margin-right: 80px;
 	text-align: center;
 	color: #000000;
 }
+
+.box_about_2{
+	position: relative;
+	
+}
+
 h2{
 	font-family: 'Banny Bold Round';
     font-size: 36px;
     line-height: 48px;
     text-transform: uppercase;
-    
-
-}
-.box_about_2{
-	margin-left: 0;
-	display: flex;
-
 }
 
 .text_up{
 	font-weight: bold;
     font-size: 18px;
     padding: 5px 0 15px 0;
-
-
 }
-/*жёлтая жирная рамка+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.yellow_border_right{
+ .picture{
+	filter: drop-shadow(0px 0px 50px #000000);
+    border-radius: 5px;
+    
+}
+
+/*жёлтая жирная рамка-квадрат +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.yellow-rect {
    border: 20px solid #E8C300;
-   
    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
    border-radius: 5px;
    width: 250px;
    height: 250px;
    position: absolute;
-   right: 0;
+   z-index: 1;
+   top: 113px;
+   
+
 }
 
+.yellow-rect_right{
+   
+	right: -125px;
+}
+
+.yellow-rect_left{
+   left: -125px;
+   
+}
 
 /* Часть 2. team+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
@@ -274,34 +291,29 @@ h2{
 }
 
 h6{
-    padding-top: 50px;
-
+    padding: 44px 0;
+    
 }
-.box_team{
+.box_team, .box_pancakes{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: flex-end;
 
 }
-.box_team_2{
+.box_team_1, .box_pancakes_1{
+     margin-right: 80px;
+     position: relative;
+}
+.box_team_2, .box_pancakes_2{
 	color: #FFFFFF;
 	text-align: center;
-	
-	
+	width: 600px;
+		
 }
 
-.yellow_border_left{
-   border: 20px solid #E8C300;
-   
-   filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
-   border-radius: 5px;
-   width: 250px;
-   height: 250px;
-   position: absolute;
-   top: 225px;
-   left: 0;
-}
 
-/* Часть 3. team+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+/* Часть 3. book++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
 .section_3{
@@ -309,49 +321,308 @@ h6{
 }
 .box_book{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: flex-start;
+
+	
 
 }
 
 .box_book_1{
-	width: 565px;
-	background-color: red;
 	color: #000000;
 	text-align: center;
+	margin: 0 72px 0 30px;
+	
 }
 
 .box_book_2{
-	margin-left: 0;
-	display: flex;
-	
+	position: relative;
+}
+.info{
+	text-align: center;
+	color: rgba(51, 51, 51, 0.5);
+	line-height: 12px;
+	font-size: 12px;
+	margin-top: 44px;
 }
 
 /* Часть 3. Таблица ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-table{
 
-   
+
+.table{
+	margin-top: 20px;
+	width: 579px;
+
+
 }
-input{
-	width: 277px;
+.table_column{
+	width: 276px;
     height: 60px;
     background: #E5E5E5;
     border-radius: 5px;
     border: none;
-    border-spacing: 10px;
+    padding-left: 20px;
+    margin: 5px 3px;
+    font-size: 14px;
+    line-height: 19px;
 
-
-    
 }
 
 button{
-	background: #E8C300;
-    border-radius: 5px;
-    width: 563,58px;
-    height: 60px;
+	border-radius: 5px;
     border: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #E8C300;
 }
 
+.table_button{
+	width: 563px;
+    height: 60px;
+    margin-top: 5px;
+    
+}
+
+
+/* Часть 4.pancakes ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.section_4{
+	margin-top: 44px;
+	background-image: url("section_4-bg.jpg");
+	height: 675px;
+	width: 100%;
+	background-size: 100% 100%;
+}
+
+.ellipses{
+	display: flex;
+	justify-content: center;
+	margin-top: 45px;
+   
+}
+.ellipses_middle, .ellipses_sideways{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.ellipses_sideways{
+	background-color: rgba(255, 255, 255, 0.5);	
+}
+
+.ellipses_middle{
+	margin: 0 25px;
+	background-color: #FFFFFF;
+}
+
+
+/* Часть 5.меню ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.section_5{
+	margin-top: 100px;
+
+	color: #000000;
+	text-align: center;
+}
+
+
+.menu{
+	 display: flex;
+	 width: 840px;
+	 height: 50px;
+	 margin: 35px auto 51px;
+
+}
+
+li{
+	list-style: none;
+	display: flex;
+    justify-content: center;
+	height: 50px;
+	width: 120px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 18px;
+	margin-right: 1px;
+	border-right: 1px solid rgba(51, 51, 51, 0.2);
+    
+}
+.li_finite{
+	border-right:none;
+}
+
+.list{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.list_column{
+	text-align: left;
+	
+}
+.list_column_item{
+	margin-bottom: 30px;
+}
+.price_linea_one{
+    font-family: 'Banny Bold Round';
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.price_linea_two{
+      font-size: 12px;
+      line-height: 18px;
+      color: rgba(51, 51, 51, 0.5);
+}
+
+
+.list_column_item_fin{
+	margin-bottom: 0;
+}
+
+
+/* Часть 6. PRIVATE_EVENTS ++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.section_6{
+	margin-top: 100px;
+	background-image: url("section_6-bg.jpg");
+	height: 675px;
+	width: 100%;
+	background-size: 100% 100%;
+}
+
+.box_private{
+	display: flex;
+	justify-content: space-evenly;
+
+}
+
+.info_1{
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.box_private_1, .box_private_2{
+  position: relative;
+}
+
+.black_rectangle{
+      
+      position: absolute;
+      width: 80px;
+      height: 475px;
+      background-color: #000000;
+      top: 0;
+      padding: 28px;      
+}
+.black_rectangle_right{
+	right: 0;
+}
+/* Часть 6.вертикальные надписи ++++++++++++++++++++++++++++++*/
+
+.vertical_text{
+   transform: rotate(90deg);
+   text-transform: uppercase;
+   font-size: 24px;
+   line-height: 12px;
+   font-family: 'Banny Bold Round';
+   
+}
+.vertical_text_right{
+	transform: rotate(-90deg);
+
+}
+/* Часть 7.hall (фото залов в ряд) ++++++++++++++++++++++++++++++*/
+
+.section_7_hall{
+	display: flex;
+}
+.hall{
+   width:100%;
+}
+
+
+/* Часть 8. Contact ++++++++++++++++++++++++++++++++++++++++++++++++*/
+.section_8{
+     color: #000000;
+     margin-top: 100px;
+     text-align: center;
+     margin-bottom: 100px;
+}
+
+.table_contact{
+   margin-top: 35px;
+
+
+}
+
+.table_contact_column{
+    	height: 60px;
+	    width: 417px;
+        border-radius: 5px;
+        margin: 5px 3px;
+        background-color: #E5E5E5;
+        border: none;
+        padding-left: 20px;
+}
+
+.table_contact_column_message{
+	height: 120px;
+    width: 1270px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #E5E5E5;
+    border: none;
+    padding-left: 20px;
+
+
+}
+.table_contact_bottom{
+	display: flex;
+
+}
+.adress{
+	height: 60px;
+    width: 640px;
+    padding: 23px;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 5px;
+    cursor: pointer;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.button_send{
+	height: 60px;
+    width: 640px;
+    margin: 5px;
+    
+
+}
+/* Часть 9. Карта ++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.section_9{
+	width: 100%;
+    height: 475px;
+    background-image: url("maps.jpg");
+    background-size: 100% 100%;
+}
+
+/* footer ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+footer{
+	background: rgba(0, 0, 0, 0.9);
+	height: 100px;
+	width: 100%;
+	color: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	padding: 36px;
+}
 
 
 
