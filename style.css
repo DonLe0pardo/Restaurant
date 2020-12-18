@@ -114,10 +114,11 @@ nav{
 }
 /* вертикальная надпись слева в header+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .vertical{
-	transform: rotate(-90deg);
+	transform: rotate(-180deg);
     text-align: center;
     font-size: 12px;
-    margin-left: -117px;
+    padding-left: 48px;
+    writing-mode: tb;
 
 
 
@@ -125,7 +126,7 @@ nav{
 /* прямоугольная часть посредине в header+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .main{
 	text-align: center;
-    margin-right: 70px;
+    
     
 
 }
@@ -515,7 +516,7 @@ li{
       
       position: absolute;
       width: 80px;
-      height: 475px;
+      height: 100%;
       background-color: #000000;
       top: 0;
       padding: 28px;      
@@ -547,7 +548,7 @@ li{
 	display: flex;
 }
 .hall{
-   width:100%;
+   width:25%;
 }
 
 
@@ -630,6 +631,12 @@ footer{
 }
 
 
+
+
+
+
+
+
 /* медиа +++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
@@ -637,37 +644,243 @@ footer{
 
  	.conteiner{
 
-        width: 840px;
-          
-    }
-    .header{
-        
-    }
+        max-width: 840px;
+        width: 100%;
+        padding: 0 10px; 
+        }
+
     .header_up{
-        
-        
-    
-    }
+      align-items: center;  
+     
+       }
+    .header_up > nav:first-child{
+         order: 2;
+        }
+    .header_up > nav:last-child{
+         order: 3;
+        }
+    .header_up > nav{
+         width: 50%;
+        }
     .restaurant_rectangle{
-    	
-    	margin-top: 90px;
-    	margin-bottom: 50px;
+           margin-bottom: 50px;
+           margin-top: 120px;
 
-    }
+        }
     .navigation_item{
-    	width: 100px;
+   	     display: block;
+         width: 25%;
+         font-size: clamp(10px, 2vw, 12px); 
 
+        }
+    .logo{
+    	 --logo-size: min(12vw, 150px);
+         min-width: var(--logo-size);
+         min-height: var(--logo-size);
+         background-size: 100% 100%;
+         height: auto;
+         width: auto;
+         margin-top: 0;
+        }
+
+     .yellow-rect{
+     	display: none;
+     }
+     .box_about_1{
+     	width: 35%;
+     	text-align: right;
+     }
+     .box_about_2{
+     	width: 65%;
+     }
+     .picture{
+         	max-width: 100%;
+         }
+     .box_team_1, .box_pancakes_1{
+         width: 65%;
+     }
+     .box_team_2, .box_pancakes_2{
+         width: 35%;
+         text-align: left;
+     }
+     .menu{
+ 		width: 100%;
+ 	     }
+ 	     
+ 	 h6{
+ 	 	padding: 30px 0;
+ 	 }    
+ 	 
+ 	 p{
+ 	 	font-size: 14px;
+        line-height: 24px;
+ 	 }
+ 	 h2{
+ 	 	font-size: 30px;
+        line-height: 40px;
+
+ 	 }
+ 	 .box_book{
+ 	 	display: block;
+ 	 	
+ 	 }
+ 	 .box_book_1{
+ 	 	margin: auto;
+ 	 }
+ 	 .table{
+     	max-width: 100%;
+     	margin-bottom: 100px;
+
+         }
+     .table_column {
+          width: 48%;
+     }
+     .table_button{
+           width: 98%;
+     }
+
+     .table_contact{
+     	width: 100%;
+     }
+     
+
+     /* нижняя таблица*/  
+
+     .table_contact_column  {
+           width: 32%;
+           margin: 3px 1px;
+         }
+    .table_contact_column_message{
+           width: 98%;
+         }
+    .table_contact_bottom{
+            width: 100%;
+         }
+     .adress{
+    	padding: 9px 9px 9px 20px;
+       }
+
+
+      .vertical_text{
+      	font-size: 17px;
+      } 
+      .box_book_2{
+      	text-align: center;
+      }
+      
+     
     }
-    .vertical{
-    	margin-left: -57px;
-    }
- 	}
+
+
+
+ @media(max-width: 500px){
+ 	.conteiner{
+
+ 		width: 100%;
+ 	    }
+    .navigation_item{
+         width: 50%;
+         margin: 7px 0;
+         }
+    .header_up > nav{
+         flex-wrap: wrap;
+         align-content: center;
+         }
+    
+    strong{
+         font-size: 65px;
+         }
+    .buttons{
+         display: block;
+         
+
+         }
+    .pushbutton{
+         width: 50%;
+         margin: 30px auto;
+         }
     
 
+    .vertical{
+    	padding-left: 33px;
+         }
+    .section_7_hall{
+     	flex-wrap: wrap;
+
+       }
+    .hall {
+         width: 100%;
+       }
+     .list{
+	    flex-wrap: wrap;
+	    margin:0 14%;
+
+
+       }
+    .list_column{
+    	
+    	margin-bottom: 30px;
+    	
+       }
 
 
 
+       .box, .box_team, .box_pancakes, .box_private{
+       	display: block;
+       }
+       .box_private_1{
+       	  margin-right: 0; 
+       	  width: 55%;
+       }
+       .box_private_2{
+       	  width: 55%;
+       }
+       .box_about_1, .box_team_2, .box_pancakes_2 {
+          width: 100%;
+          text-align: center;
+       }
+       
 
+        .table_contact_column_message {
+           width: 95%;
+       }
+       .table_contact_column {
+          width: 30%;
+          margin: 2px 3px;
+        }
+        .table_contact_bottom {
+           width: 99%;
+       }
+
+        .text_up {
+            font-weight: bold;
+            font-size: 15px;
+            padding: 5px 0 10px 0;
+        }
+        .info {
+        	font-size: 10px;
+        }
+        .price_linea_one{
+        	 font-size: 16px;
+        }
+
+        .picture{
+        	filter: none;
+        	margin: 10px 0;
+        }
+        .box_about_2, .box_team_1, .box_pancakes_1{
+        	margin: 0 18%;
+        }
+        p{
+        	line-height: 19px;
+        }
+
+        .adress{
+        	font-size: 12px;
+            line-height: 12px;
+        }
+}  
+         
 
 
 
